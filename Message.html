@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>在线留言</title>
+	<link rel="stylesheet" type="text/css" href="css/Message.css">
+	<style>
+		*{margin: 0px;padding: 0px;}
+		li{list-style: none;}
+		a{text-decoration: none}
+	</style>
+</head>
+<body>
+	<!-- 头部logo及导航 -->
+	<header>
+		<div class="header">
+			<div class="header1">
+				<div class="header2">
+					<a href="index.html"><img src="img/logo_new.png" alt=""></a>
+					<p>专业的婚庆平台</p>
+				</div>
+				<div class="header3">
+					<div>
+						<img src="img/dianhua1.png" alt="">
+						<p>咨询热线</p>
+						<h1>0000-13131588</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header4">
+			<div class="header5">
+				<ul>
+					<li class="li1"><a href="index.html">首页</a></li>
+					<li><a href="Aboutus.html">关于我们</a></li>
+					<li><a href="Plan.html">婚庆策划</a></li>
+					<li><a href="shot.html">婚庆摄像</a></li>
+					<li><a href="News.html">新闻中心</a></li>
+					<li><a href="Partners.html">合作伙伴</a></li>
+					<li><a href="Message.html">在线留言</a></li>
+					<li><a href="Contact.html">联系我们</a></li>
+				</ul>
+				<div>
+					<input type="text" placeholder="">
+					<span><img src="img/sousuo.png" alt=""></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- 头部背景 -->
+	<div class="banner"></div>
+	<!-- 内容部分 -->
+	<div class="content">
+		<div class="content1">
+			<div class="content2">
+				<div class="menu">
+					<p>Message /</p>
+					<span>在线留言</span>
+				</div>
+				<div class="div1">
+					<a href=""><div class="menu1" id="menu2" onmouseover="checkMainMenu(this)"><p>提交留言</p><h1></h1></div></a>
+					<a href=""><div class="menu1" onmouseover="checkMainMenu(this)"><p>常见问题</p><h2></h2></div></a>
+					<div class="menu3"></div>
+				</div>
+				<div class="menu4">
+					<img src="img/fuwu.png" alt="">
+					<p>服务热线<br>0000-13131588</p>
+				</div>
+				<div class="menu5">
+					<img src="img/xiezi.jpg" alt="">
+					<div>
+						<p>服务项目</p>
+						<span><a href="">摄影</a>&nbsp|&nbsp<a href="">摄像</a><br><a href="">化妆</a>&nbsp|&nbsp<a href="">主持</a></span>
+					</div>
+				</div>
+				<div class="menu6">
+					<div><a href="###"><img src="img/weibo.png" alt=""></a></div>
+					<div><a href="###"><img src="img/weixin.png" alt=""></a></div>
+					<div><a href="###"><img src="img/qq.png" alt=""></a></div>
+				</div>
+			</div>
+			<div class="content3">
+				<div class="content4">
+					<p><img src="img/zhibiao.png" alt="">当前位置 > 首页 > 在线留言 > <span>提交留言</span></p>
+				</div>
+				<div class="content5"><p>欢迎您对本站留下的咨询建议，注<span>*</span>为必填</p></div>
+				<div class="content6">
+					<div class="content7">
+						<p>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名</p>
+						<input type="text" style="outline:none">
+						<span>*</span>
+					</div>
+					<div class="content8">
+						<p>联系电话</p>
+						<input type="text" style="outline:none">
+					</div>
+					<div class="content9">
+						<p>联系邮箱</p>
+						<input type="text" style="outline:none">
+					</div>
+					<div class="content10">
+						<p>留言内容</p>
+						<textarea name="" id="" cols="50" rows="20"></textarea>
+						<span>*</span>
+					</div>
+					<div class="content11">
+						<p>验证码</p>
+						<input type="text" style="outline:none">
+						<img src="img/yanzheng.png" alt="">
+					</div>
+					<input type="submit" value="立即提交" style="background: #DD4145;border: 1px solid #333;width: 90px;height: 35px;outline:none;color: #fff;margin-top: 10px;margin-left: 68px;">
+				</div>
+			</div>
+		</div>
+		<div class="foot5">
+			<div class="foot6">
+				<p>友情链接：<a href="###">百度</a>&nbsp&nbsp <a href="">新浪</a>&nbsp&nbsp <a href="">阿里巴巴</a>&nbsp&nbsp <a href="###">网易</a></p>
+				<span>2004 Microsoft Corporation. All rights reserved.</span>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// 鼠标移入移出效果
+		function checkMainMenu(argument){
+			var divs = document.getElementsByClassName("menu1");
+				for(var i = 0;i<divs.length; i++){
+					if(divs[i] == argument){
+						divs[i].style.background="linear-gradient(to top,#C9C3B7,#EDE0D1)";
+					}else{
+						divs[i].style.background="#EFEBE0";
+					}
+				}
+			}
+	</script>
+</body>
+</html>
